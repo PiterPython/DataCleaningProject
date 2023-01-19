@@ -45,7 +45,7 @@ def find_outliers_z_score(data, feature, left=3, right=3, log_scale=False):
 
     Returns:
         pandas.DataFrame: наблюдения, попавшие в разряд выбросов
-        pandas.DataFrame: очищенные данные, из которых исключены выбросы
+        pandas.DataFrame:    очищенные данные, из которых исключены выбросы
     """
     if log_scale:
         x = np.log(data[feature]+1)
